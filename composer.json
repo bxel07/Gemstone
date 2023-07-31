@@ -1,0 +1,22 @@
+{
+    "name": "xel/gemstone",
+    "description": "incubator",
+    "type": "library",
+    "authors": [
+        {
+            "name": "bxel",
+            "email": "yogipratama.ut@gmail.com"
+        }
+    ],
+    "require": {
+        "react/async": "^4 || ^3 || ^2",
+        "react/event-loop": "^1.4",
+        "react/promise": "^3.0",
+        "spatie/async": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gemstone\\": "src/"
+        }
+    }
+}
