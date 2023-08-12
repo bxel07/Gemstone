@@ -14,10 +14,7 @@ class GemstoneLoader {
     private $config;
     private $configvalue;
     private $hashvalue;
-    private $dataenc;
-    private $deckey;
 
-    
     // For constructor 
     public function __construct($config, $configvalue , $hashvalue)
     {
@@ -36,9 +33,7 @@ class GemstoneLoader {
         $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('aes-128-cbc'));
         $ciphertext = openssl_encrypt($serialized, 'aes-128-cbc', $key, OPENSSL_RAW_DATA, $iv);
         $hexconverter = bin2hex($iv).bin2hex($ciphertext);
-        //$slice = substr($hexconverter,'0','32');
         return $hexconverter;
-//        return $iv . $ciphertext;
     }
 
     public function DecGem($data, $key) {
@@ -63,12 +58,9 @@ class GemstoneLoader {
             $gemcalc = new GemstoneHardnessCalculator();
             $gemcalc->generateHashValues(); 
 
-            echo "Step 1 : Running Gemstone Task"."<br>";
-
             try{
                 $gemhash = new GemstoneHasher();
                 $gemhash->storeHashedValues();
-                echo "Step 2 : New Gemstone Encryptions";
 
             }catch(Throwable $e) {
                 echo "error:".$e->getMessage();

@@ -1,7 +1,7 @@
 <?php
 $config = array (
-  'Diamond' => 'aa1537beb7cbd6d1ccbf1111680da4a1e0aba00a95e3f77073ff3de6ca7b9e4e',
-  'Ruby' => '749a3bf6d57d2d724a99bf121f93124b6bf1590e87fce6b89c175edf7d9e29ce',
-  'Sapphire' => '583632eeea55c6492503d75a99c7610c4b103b76325887b8f2696324c9ab15bf',
-  'Lapis Lazuli' => 'd3f767fddbc47fc49bc501afb4e5e7c3615210bfa17e8a1d35ee862ddb082165',
+  'Diamond' => '78bf1a75cb92b705011454dad6334d2535941966b7fc4c4e008b823ed4aa7cd9',
+  'Ruby' => '135286703e88227b63767e184c61807f8ceebd69dd697348d1ed68f4d0fb05ae',
+  'Sapphire' => 'a1590ad6ca9c3fa886d739283182e37e1247ae5d6d344274f7fd6c016ae2f502',
+  'Lapis Lazuli' => '55be372777f1ac7173ebecebf5d937cb37346735dffe9caf7f3d1435589c2346',
 );

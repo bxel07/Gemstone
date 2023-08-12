@@ -58,9 +58,4 @@ class GemstoneHasher
     }
 }
 
-//$hasher = new GemstoneHasher();
-//$hasher->storeHashedValues();
 
-// // Output a success message
-// echo 'Hashed rounded values have been stored in config.php';
-?>

@@ -12,7 +12,8 @@ class main{
         $this->instance = new \gemstone\gemsecure\GemstoneLoader($this->loadconfig(), 'log/config.php', 'log/values.json');
     }
 
-    public function loadconfig() {
+    public function loadconfig(): void
+    {
         require __DIR__ . "/gemsecure/log/config.php";
         $data = $config;
         // get independence value
@@ -49,16 +50,12 @@ class main{
         switch ($key) {
             case 'Diamond' :
                 return $this->instance->DecGem($data, $this->Diamond);
-                break;
             case 'Ruby' :
                 return $this->instance->DecGem($data, $this->Ruby);
-                break;
             case 'Sapphire':
                 return $this->instance->DecGem($data, $this->Saphire);
-                break;
             case 'Lapis Lazuli':
                 return $this->instance->DecGem($data, $this->Lapiz);
-                break;
             default :
                 echo "use valid salt type only use Diamond, Ruby, Sapphire, Lapis Lazuli";
         }
@@ -66,19 +63,3 @@ class main{
 }
 
 
-$instance= new main();
-$instance->reGemstone();
-//  $dataArray = array(
-//      'name' => 'John Doe',
-//      'age' => 30,
-//      'email' => 'johndoe@example.com'
-//  );
-
-
-// $encryptedData = $instance->ed('Diamond', $dataArray);
-
-// echo $encryptedData;
-
-// $data = $instance->dd('Diamond', $encryptedData);
-
-// print_r($data);
